@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <title>Casino</title>
     <style>
       *,
@@ -13,13 +15,20 @@
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
       }
+
       a {
         text-decoration: none;
       }
-
+      body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+      }
       html {
+        
         background-color: #e5eaff;
-        width: 1200px;
+          font-family: 'Roboto', sans-serif;
+
       }
       .logo {
         display: flex;
@@ -55,19 +64,28 @@
       }
       .game_container {
         display: flex;
-      }
+        flex-direction: column;
+        align-items: center;
+        text-align: center;     
+       }
       .game div {
         font-weight: 500;
-font-size: 12px;
-line-height: 130%;
-color: #000;
+        font-size: 14px;
+        line-height: 130%;
+        color: #000;
       }
+      .container_image img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+}
       .game_container:not(:first-child) {
   margin-left: 15px;
 }
 
       .container_image{
-        margin-right: 30px;
+        
 }
       .game_booton {
         display: flex;
@@ -77,22 +95,30 @@ color: #000;
       .booton {
         border: 6px solid #da2e71;
         border-radius: 8px;
-        width: 165px;
+        width: 160px;
         height: 60px;
         text-align: center;
         font-weight: 700;
         font-size: 18px;
-        padding: 10px;
+        padding: 12px;
         border-radius: 5px;
         color: #000;
       }
+      .reality{
+        background: #252638;
+      }
+      .reality_image img{
+border-radius: 8px;
+width: 168px;
+height: 112px;
+      } 
     </style>
   </head>
   <body>
     <!--header-->
     <header class="header">
       <div class="logo">
-        <a href="#"><img src="./img/logo.svg" alt="logo" /></a>
+  <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/logo.svg" alt="logo" />
       </div>
       <div class="header_container">
         <div class="notation">
@@ -114,7 +140,8 @@ color: #000;
         <div class="game_container">
           <div class="container_image">
             <a href="" class="game_container_link"></a>
-            <img src="./img/game0.png" alt="" />
+            <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/game/game0.png" alt="Game Image">
+
           </div>
           <div>
             <h2>Fruity crown від Playson</h2>
@@ -128,7 +155,7 @@ color: #000;
         <div class="game_container">
           <div class="container_image">
             <a href="" class="game_container_link"></a>
-            <img src="./img/game0.png" alt="" />
+            <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/game/game0.png" alt="Game Image">
           </div>
           <div>
             <h2>Fruity crown від Playson</h2>
@@ -142,7 +169,7 @@ color: #000;
         <div class="game_container">
           <div class="container_image">
             <a href="" class="game_container_link"></a>
-            <img src="./img/game0.png" alt="" />
+            <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/game/game0.png" alt="Game Image">
           </div>
           <div>
             <h2>Fruity crown від Playson</h2>
@@ -175,35 +202,48 @@ color: #000;
             </p>
           </div>
           <div class="reality_image">
-            <a href="" class="reality_image_link"></a>
+            <a href="" class="reality_image_link">  <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/game/game1.jpg" alt="Game Image">
+</a>
             <div>
               <div class="price">
                 <p>€458,658.12</p>
               </div>
             </div>
+                      </div>
+
+            <div class="reality_image_title ">
+                <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_game.svg" alt="icon" style="vertical-align: middle; margin-right: 8px;">
+
+              <p>Game Title</p>
+            </div>
+          <div class="reality_image">
+            <a href="" class="reality_image_link">  <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/game/game2.jpg" alt="Game 2 Image">
+</a>
+            <div>
+              <div class="price">
+                <p>€458,658.12</p>
+              </div>
+            </div>
+                      </div>
+
             <div class="reality_image_title">
+                <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_game.svg" alt="icon" style="vertical-align: middle; margin-right: 8px;">
+
               <p>Game Title</p>
             </div>
           </div>
           <div class="reality_image">
-            <a href="" class="reality_image_link"></a>
-            <div>
+            <a href="" class="reality_image_link">  <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/game/game3.jpg" alt="Game 3 Image">
+</a>            <div>
               <div class="price">
                 <p>€458,658.12</p>
               </div>
             </div>
+                      </div>
+
             <div class="reality_image_title">
-              <p>Game Title</p>
-            </div>
-          </div>
-          <div class="reality_image">
-            <a href="" class="reality_image_link"></a>
-            <div>
-              <div class="price">
-                <p>€458,658.12</p>
-              </div>
-            </div>
-            <div class="reality_image_title">
+                <img src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_game.svg" alt="icon" style="vertical-align: middle; margin-right: 8px;">
+
               <p>Game Title</p>
             </div>
           </div>
@@ -248,12 +288,13 @@ color: #000;
         <a href="" class="help_booton">Замовити дзвінок</a>
       </section>
     </main>
-    <footer>
+
+  </body>
+      <footer>
       <div class="footer">
         Ви отримали цей лист, тому що зареєстровані на google.com та підтвердили
         свою згоду з Правилами та Умовами. Для того, щоб відписатися від
         розсилки, натисніть на посилання
       </div>
     </footer>
-  </body>
 </html>
