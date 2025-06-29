@@ -107,12 +107,36 @@
       .reality{
         background: #252638;
       }
+      .reality_image {
+        position: relative;
+        display: inline;
+        width:auto;
+}
       .reality_image img{
 border-radius: 8px;
 width: 168px;
 height: 112px;
-      } 
-    </style>
+          }
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  transition: background 0.3s ease;
+  transition: color 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+
+.reality_image_link:hover .overlay  {
+  background: rgb(0, 0, 0); 
+  color: rgb(255, 0, 0);
+  font-size: 25px;
+} 
+          </style>
   </head>
   <body>
     <!--header-->
