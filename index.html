@@ -316,43 +316,89 @@
           <a href="#">Грати</a>
         </div>
       </section>
+      <style>
+        .setting {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          background: #60c;
+        }
+        .setting_blok {
+          display: flex;
 
+          align-items: center;
+          margin-bottom: 12px;
+          margin-left: 0;
+          border: 6px solid #da2e71;
+          padding: 20px;
+          border-radius: 10px;
+          background-color: #fff;
+        }
+
+        .setting_blok {
+        }
+
+        .setting_blok img {
+          margin-right: 10px;
+          width: 32px;
+          height: 32px;
+        }
+
+        .information {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .information_app {
+          display: flex;
+          justify-content: flex-start;
+          height: 100%;
+        }
+
+        .information p {
+          font-size: 16px;
+          color: #333;
+        }
+
+        .setting_botton {
+          border-radius: 8px;
+          padding: 8px 12px;
+          width: 178px;
+          height: 40px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32),
+            0 0 1px 0 rgba(0, 0, 0, 0.04);
+          background: linear-gradient(135deg, #ff3b3b 0%, #60c 100%);
+          color: white;
+          font-weight: bold;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+        }
+      </style>
       <section class="setting">
         <div class="setting_blok">
-          <style>
-          .setting_blok{
-            border: 6px solid #da2e71;}
-          .setting_blok_title{
-            display:flex
-          }
-          .setting_blok_button{
-       
-          }
-          .information{display:flex}
-          </style>
-          <div class="setting_blok_title">
-            <img
+          <div class="information">
+            <div class="information_app">
+              <img
                 src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/acon_tel.svg"
                 alt="icon"
               />
-            <h4>Встановлюйте додаток та отримуйте бонус</h4>
+              <h4>Встановлюйте додаток та отримуйте бонус</h4>
+            </div>
+
+            <div>
+              <p>
+                Для встановлення додатка переходьте за посиланням або натисніть
+                кнопку “Завантажити”
+              </p>
+            </div>
           </div>
-          <div class="information">
-            <p>
-              Для встановлення додатка переходьте за посиланням або натисніть
-              кнопку “Завантажити”
-            </p>
-          
-          <div class="setting_blok_button">
-            <a href="#" class="setting_botton">Завантажити</a>
-          </div>
-      
-          </div>
+          <div><a href="#" class="setting_botton">Завантажити</a></div>
         </div>
-        
-</div>
+
         <div class="setting_blok">
-          <div class="setting_blok_title">
+          <div class="information">
             <h4>Будь завжди з нами на зв'язку! Підключай Telegram Bot</h4>
           </div>
           <a href="#" class="setting_botton">Підключитися</a>
