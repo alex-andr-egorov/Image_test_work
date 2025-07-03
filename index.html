@@ -321,7 +321,7 @@
           display: flex;
           flex-direction: column;
           gap: 20px;
-          background: #60c;
+          background: linear-gradient(135deg, #494c6a 0%, #252638 100%);;
         }
         .setting_blok {
           display: flex;
@@ -336,8 +336,22 @@
         }
 
         .setting_blok {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: linear-gradient(135deg, #ff3b3b 0%, #60c 100%);
+          border-radius: 16px;
+          border-color: linear-gradient(135deg, #ff3b3b 0%, #60c 100%);
+          border: 2px;
+          margin-top: 20px;
+          margin-left: 40px;
+          margin-right: 40px;
         }
-
+.setting_blok span {
+  text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #fff;
+}
         .setting_blok img {
           margin-right: 10px;
           width: 32px;
@@ -348,6 +362,7 @@
           display: flex;
           flex-direction: column;
           gap: 20px;
+          color: #fff;
         }
         .information_app {
           display: flex;
@@ -356,8 +371,10 @@
         }
 
         .information p {
-          font-size: 16px;
-          color: #333;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 134%;
+          color: rgba(255, 255, 255, 0.8);
         }
 
         .setting_botton {
@@ -374,6 +391,7 @@
           justify-content: center;
           align-items: center;
           text-decoration: none;
+          margin-right: 12%;
         }
       </style>
       <section class="setting">
@@ -384,22 +402,22 @@
                 src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/acon_tel.svg"
                 alt="icon"
               />
-              <h4>Встановлюйте додаток та отримуйте бонус</h4>
+              <h3>Встановлюйте додаток та отримуйте бонус</h3>
             </div>
 
             <div>
               <p>
-                Для встановлення додатка переходьте за посиланням або натисніть
+                Для встановлення додатка переходьте <span>за посиланням</span> або натисніть
                 кнопку “Завантажити”
               </p>
             </div>
           </div>
-          <div><a href="#" class="setting_botton">Завантажити</a></div>
+          <div class="setting_botton"><a href="#" ></a>Завантажити</a></div>
         </div>
 
         <div class="setting_blok">
           <div class="information">
-            <h4>Будь завжди з нами на зв'язку! Підключай Telegram Bot</h4>
+            <h3>Будь завжди з нами на зв'язку! Підключай <span>Telegram Bot</span></h3>
           </div>
           <a href="#" class="setting_botton">Підключитися</a>
         </div>
