@@ -98,7 +98,7 @@
         font-size: 18px;
         padding: 12px;
         color: #000;
-        background: #fff;
+        background: #e5eaff;;
       }
 
       section.reality {
@@ -320,32 +320,26 @@
         .setting {
           display: flex;
           flex-direction: column;
-          gap: 20px;
           background: linear-gradient(135deg, #494c6a 0%, #252638 100%);;
         }
-        .setting_blok {
-          display: flex;
-
-          align-items: center;
-          margin-bottom: 12px;
-          margin-left: 0;
-          border: 6px solid #da2e71;
-          padding: 20px;
-          border-radius: 10px;
-          background-color: #fff;
-        }
+   
 
         .setting_blok {
+
           display: flex;
           justify-content: space-between;
           align-items: center;
           background: linear-gradient(135deg, #ff3b3b 0%, #60c 100%);
           border-radius: 16px;
-          border-color: linear-gradient(135deg, #ff3b3b 0%, #60c 100%);
-          border: 2px;
-          margin-top: 20px;
+       
+          margin-top: 10px;
           margin-left: 40px;
           margin-right: 40px;
+          margin-bottom: 6px;
+          border: 2px solid linear-gradient(135deg, #ff3b3b 0%, #60c 100%);
+          padding: 20px;
+          border-radius: 10px;
+          background-color: #fff;
         }
 .setting_blok span {
   text-decoration: underline;
@@ -357,7 +351,13 @@ color: #fff;
           width: 32px;
           height: 32px;
         }
+.setting_blok_alrm {
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32), 0 0 1px 0 rgba(0, 0, 0, 0.04);
+background: linear-gradient(135deg, #3e7bfa 0%, #60c 100%);
+          border: 2px solid linear-gradient(135deg, #3e7bfa 0%, #60c 100%);
 
+
+}
         .information {
           display: flex;
           flex-direction: column;
@@ -393,6 +393,10 @@ color: #fff;
           text-decoration: none;
           margin-right: 12%;
         }
+        .setting_botton_alrm{
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32), 0 0 1px 0 rgba(0, 0, 0, 0.04);
+background: linear-gradient(135deg, #3e7bfa 0%, #60c 100%);
+        }
       </style>
       <section class="setting">
         <div class="setting_blok">
@@ -415,11 +419,11 @@ color: #fff;
           <div class="setting_botton"><a href="#" ></a>Завантажити</a></div>
         </div>
 
-        <div class="setting_blok">
+        <div class="setting_blok setting_blok_alrm">
           <div class="information">
             <h3>Будь завжди з нами на зв'язку! Підключай <span>Telegram Bot</span></h3>
           </div>
-          <a href="#" class="setting_botton">Підключитися</a>
+          <a href="#" class="setting_botton setting_botton_alrm">Підключитися</a>
         </div>
       </section>
 
