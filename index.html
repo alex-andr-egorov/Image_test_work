@@ -175,7 +175,9 @@
         justify-content: center;
       }
 
-      .reality_button a {
+      .reality_button a
+
+      {
         border-radius: 8px;
         padding: 8px 12px;
         width: 186px;
@@ -245,7 +247,9 @@
       }
 
       /* Контейнер кнопки с высотой 100% */
-      .setting_botton {
+      .setting_botton,
+      .help_booton
+      {
         border-radius: 8px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -260,7 +264,10 @@
         margin: 1px;
       }
 
-      .setting_botton a {
+      .setting_botton a,
+      .help_booton
+
+      {
         border-radius: 8px;
         padding: 8px 12px;
         width: 186px;
@@ -297,17 +304,21 @@
         margin-bottom: 20px;
       }
 
-      .help_booton {
-        display: inline-block;
-        padding: 12px 24px;
-        background: #da2e71;
-        color: white;
-        border-radius: 8px;
-        font-weight: 700;
-        font-size: 18px;
-        text-decoration: none;
-        cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    
+      .help{
+display: flex;
+        background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
+
+      }
+      .help_title{}
+      
+      .help_title h4{
+    
+          color: white;
+      }
+      .footer{
+        background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
+
       }
     </style>
   </head>
@@ -440,10 +451,9 @@
         <div class="setting_blok">
           <div class="information">
             <div class="information_app">
-              <img
-                src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/acon_tel.svg"
-                alt="icon"
-              />
+          <img
+            src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_tel.svg"
+            alt="tel"/>
               <h3>Встановлюйте додаток та отримуйте бонус</h3>
             </div>
 
@@ -455,18 +465,35 @@
             </div>
           </div>
           <div class="setting_botton">
-            <a href="#">Завантажити</a>
+
+            <a href="#">
+          <img
+            src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_cloud.svg"
+            alt="cloud"/>
+                Завантажити
+                </a>
           </div>
         </div>
 
         <div class="setting_blok setting_blok_alrm">
           <div class="information">
+              <div class="information_app">
+          <img
+            src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_tel.svg"
+            alt="alarm"/>
             <h3>
               Будь завжди з нами на зв'язку! Підключай <span>Telegram Bot</span>
             </h3>
-          </div>
+       
+              </div>
+   </div>
           <div class="setting_botton">
-            <a href="#" class="setting_botton_alrm">Підключитися</a>
+            <a href="#" class="setting_botton_alrm">
+          <img
+            src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_tg.svg"
+            alt="tg"/>
+                Підключитися
+                </a>
           </div>
         </div>
       </section>
@@ -476,7 +503,10 @@
           <h4>Залишились питання?</h4>
           <p>Наші фахівці допоможуть розібратися</p>
         </div>
-        <a href="#" class="help_booton">Замовити дзвінок</a>
+        <div class="help_booton">
+                   <a href="#">Замовити дзвінок</a>
+                   
+        </div>
       </section>
     </main>
 
