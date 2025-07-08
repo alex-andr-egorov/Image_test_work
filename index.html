@@ -246,7 +246,9 @@
         color: rgba(255, 255, 255, 0.8);
       }
 
-      /* Контейнер кнопки с высотой 100% */
+      .help_booton {
+          
+      }
       .setting_botton,
       .help_booton
       {
@@ -268,6 +270,7 @@
       .help_booton
 
       {
+          text-align: right;
         border-radius: 8px;
         padding: 8px 12px;
         width: 186px;
@@ -289,13 +292,20 @@
 
       /* Секция help */
       .help {
+display: flex;
+justify-content: space-between;
+        background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
         text-align: center;
-        margin: 40px 0;
+        margin: 0;
+        padding: 20px;
+        
       }
 
       .help_title h4 {
         font-size: 20px;
         margin-bottom: 8px;
+          color: white;
+
       }
 
       .help_title p {
@@ -306,20 +316,32 @@
 
     
       .help{
-display: flex;
-        background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
 
       }
-      .help_title{}
+      .help_title{
+         
+        
+text-align: left;
+      }
       
       .help_title h4{
     
-          color: white;
       }
       .footer{
         background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
 
       }
+.footer a{
+    color: red;
+}
+
+.line {
+    
+           background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
+           color:;
+          
+ }
+     
     </style>
   </head>
 
@@ -497,7 +519,7 @@ display: flex;
           </div>
         </div>
       </section>
-
+<p class="line">-----------------</p>
       <section class="help">
         <div class="help_title">
           <h4>Залишились питання?</h4>
@@ -512,13 +534,18 @@ display: flex;
                    
         </div>
       </section>
+      <p class="line">-----------------</p>
+      
     </main>
 
     <footer>
       <div class="footer">
         Ви отримали цей лист, тому що зареєстровані на google.com та підтвердили
         свою згоду з Правилами та Умовами. Для того, щоб відписатися від
-        розсилки, натисніть на посилання
+        розсилки, натисніть на
+            <a href="#">посилання</a>
+
+    
       </div>
     </footer>
   </body>
