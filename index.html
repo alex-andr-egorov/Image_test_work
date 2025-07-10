@@ -175,9 +175,7 @@
         justify-content: center;
       }
 
-      .reality_button a
-
-      {
+      .reality_button a {
         border-radius: 8px;
         padding: 8px 12px;
         width: 186px;
@@ -222,12 +220,6 @@
         color: #fff;
       }
 
-      .setting_blok img {
-        margin-right: 10px;
-        width: 32px;
-        height: 32px;
-      }
-
       .information {
         width: 65%;
         display: flex;
@@ -247,11 +239,18 @@
       }
 
       .help_booton {
-          
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-      .setting_botton,
-      .help_booton
-      {
+      .help_booton img {
+      }
+      .setting_blok img {
+        margin-right: 10px;
+        width: 32px;
+        height: 32px;
+      }
+      .setting_botton {
         border-radius: 8px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -267,15 +266,13 @@
       }
 
       .setting_botton a,
-      .help_booton
-
-      {
-          text-align: right;
+      .help_booton a {
+        justify-content: center;
         border-radius: 8px;
-        padding: 8px 12px;
-        width: 186px;
+        /* padding: 8px 12px; */
+        width: 176px;
         height: 40px;
-        margin: 20px;
+        /* margin: 20px; */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.32), 0 0 1px rgba(0, 0, 0, 0.04);
         background: linear-gradient(135deg, #ff3b3b 0%, #60c 100%);
         color: white;
@@ -285,6 +282,19 @@
         align-items: center;
         text-decoration: none;
         cursor: pointer;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 171%;
+      }
+      .setting_botton img,
+      .help_booton img {
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+      }
+      .help_booton img {
+        width: 20px;
+        height: 20px;
       }
       .setting_botton a.setting_botton_alrm {
         background: linear-gradient(135deg, #3e7bfa 0%, #60c 100%);
@@ -292,20 +302,18 @@
 
       /* Секция help */
       .help {
-display: flex;
-justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
         background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
         text-align: center;
         margin: 0;
         padding: 20px;
-        
       }
 
       .help_title h4 {
         font-size: 20px;
         margin-bottom: 8px;
-          color: white;
-
+        color: white;
       }
 
       .help_title p {
@@ -314,34 +322,33 @@ justify-content: space-between;
         margin-bottom: 20px;
       }
 
-    
-      .help{
+      .help {
+      }
+      .help_title {
+        text-align: left;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 171%;
+        color: rgba(255, 255, 255, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
       }
-      .help_title{
-         
-        
-text-align: left;
+
+      .help_title h4 {
       }
-      
-      .help_title h4{
-    
-      }
-      .footer{
+      .footer {
         background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
-
       }
-.footer a{
-    color: red;
-}
+      .footer a {
+        color: red;
+      }
 
-.line {
-    
-           background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
-           color:;
-          
- }
-     
+      .line {
+        background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
+        color: ;
+      }
     </style>
   </head>
 
@@ -473,9 +480,10 @@ text-align: left;
         <div class="setting_blok">
           <div class="information">
             <div class="information_app">
-          <img
-            src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_tel.svg"
-            alt="tel"/>
+              <img
+                src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_tel.svg"
+                alt="tel"
+              />
               <h3>Встановлюйте додаток та отримуйте бонус</h3>
             </div>
 
@@ -487,55 +495,57 @@ text-align: left;
             </div>
           </div>
           <div class="setting_botton">
-
             <a href="#">
-          <img
-            src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_cloud.svg"
-            alt="cloud"/>
-                Завантажити
-                </a>
+              <img
+                src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_cloud.svg"
+                alt="cloud"
+              />
+              Завантажити
+            </a>
           </div>
         </div>
 
         <div class="setting_blok setting_blok_alrm">
           <div class="information">
-              <div class="information_app">
-          <img
-            src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_tel.svg"
-            alt="alarm"/>
-            <h3>
-              Будь завжди з нами на зв'язку! Підключай <span>Telegram Bot</span>
-            </h3>
-       
-              </div>
-   </div>
+            <div class="information_app">
+              <img
+                src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_tel.svg"
+                alt="alarm"
+              />
+              <h3>
+                Будь завжди з нами на зв'язку! Підключай
+                <span>Telegram Bot</span>
+              </h3>
+            </div>
+          </div>
           <div class="setting_botton">
             <a href="#" class="setting_botton_alrm">
-          <img
-            src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_tg.svg"
-            alt="tg"/>
-                Підключитися
-                </a>
+              <img
+                src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_tg.svg"
+                alt="tg"
+              />
+              Підключитися
+            </a>
           </div>
         </div>
       </section>
-<p class="line">-----------------</p>
+      <p class="line">-----------------</p>
       <section class="help">
         <div class="help_title">
           <h4>Залишились питання?</h4>
           <p>Наші фахівці допоможуть розібратися</p>
         </div>
         <div class="help_booton">
-                   <a href="#">
-                     <img
-            src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_help.svg"
-            alt="help"/>
-                     Замовити дзвінок</a>
-                   
+          <a href="#">
+            <img
+              src="https://raw.githubusercontent.com/alex-andr-egorov/test_work_casino/main/icon/icon_help.svg"
+              alt="help"
+            />
+            Замовити дзвінок</a
+          >
         </div>
       </section>
       <p class="line">-----------------</p>
-      
     </main>
 
     <footer>
@@ -543,9 +553,7 @@ text-align: left;
         Ви отримали цей лист, тому що зареєстровані на google.com та підтвердили
         свою згоду з Правилами та Умовами. Для того, щоб відписатися від
         розсилки, натисніть на
-            <a href="#">посилання</a>
-
-    
+        <a href="#">посилання</a>
       </div>
     </footer>
   </body>
