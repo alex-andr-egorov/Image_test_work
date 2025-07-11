@@ -240,7 +240,7 @@
 
       .help_booton {
         display: flex;
-        justify-content: center;
+        
         align-items: center;
       }
       .help_booton img {
@@ -269,10 +269,10 @@
       .help_booton a {
         justify-content: center;
         border-radius: 8px;
-        /* padding: 8px 12px; */
+        
         width: 176px;
         height: 40px;
-        /* margin: 20px; */
+    
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.32), 0 0 1px rgba(0, 0, 0, 0.04);
         background: linear-gradient(135deg, #ff3b3b 0%, #60c 100%);
         color: white;
@@ -303,11 +303,15 @@
       /* Секция help */
       .help {
         display: flex;
+        
         justify-content: space-between;
         background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
         text-align: center;
         margin: 0;
-        padding: 20px;
+    
+border-top: 1px dashed gray;
+  border-bottom: 1px dashed gray;
+  padding: 16px;
       }
 
       .help_title h4 {
@@ -318,11 +322,12 @@
 
       .help_title p {
         font-size: 16px;
-        color: #555;
-        margin-bottom: 20px;
+        color: gray;
+    
       }
 
       .help {
+
       }
       .help_title {
         text-align: left;
@@ -332,14 +337,20 @@
         color: rgba(255, 255, 255, 0.6);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+
+    
 
       }
 
       .help_title h4 {
       }
       .footer {
+display: flex;
+  justify-content: center;     /* по центру по горизонтали */
+  text-align: center;          /* чтобы текст сам был по центру */
+  padding: 20px;
         background: linear-gradient(135deg, #494c6a 0%, #252638 100%);
+     color: grey;
       }
       .footer a {
         color: red;
@@ -529,7 +540,7 @@
           </div>
         </div>
       </section>
-      <p class="line">-----------------</p>
+    
       <section class="help">
         <div class="help_title">
           <h4>Залишились питання?</h4>
@@ -545,15 +556,17 @@
           >
         </div>
       </section>
-      <p class="line">-----------------</p>
+     
     </main>
 
     <footer>
-      <div class="footer">
-        Ви отримали цей лист, тому що зареєстровані на google.com та підтвердили
+      <div class="footer"><p>
+  Ви отримали цей лист, тому що зареєстровані на google.com та підтвердили
         свою згоду з Правилами та Умовами. Для того, щоб відписатися від
-        розсилки, натисніть на
-        <a href="#">посилання</a>
+        розсилки, натисніть на <span>        <a href="#">посилання</a>
+        </span
+      </p>
+      
       </div>
     </footer>
   </body>
